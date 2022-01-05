@@ -10,7 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/PaddysCafe.css" rel="stylesheet" />        
+        <link href="css/CCTStudents.css" rel="stylesheet" />        
         <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -25,45 +25,52 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/jeffboxer/ssp-ca3">GitHub</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>This is my SSP - CA3 website!</h1>
-                <p class="lead">Below, I have a list with items:</p>
-                
-            </div>
 
-            <div id="results" class="col-lg-8 mb-5 order-2"></div>
-            <div id="menu" class="col-lg-4 mb-5 order-1">
-                <form enctype="application/json" action="/post/json" method="post">
-                    <div class="form-group">
-                        <select class="form-control" name="sec_n">
-                            <option value="0">Drinks</option>
-                            <option value="1">Side Dishes</option>
-                            <option value="2">Breakfast</option>
-                            <option value="3">Lunch</option>
-                            <option value="4">Dinner</option>
-                        </select>
-                        <input class="form-control mt-3" type="text" name="item" placeholder="Item">
-                        <input class="form-control mt-3" type="text" name="price" placeholder="Price">
-                        <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">Submit</button></div>
-                    </div>
-                </form>
-                <div class="d-grid gap-2">
-                <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button></div>
-                <p class="text-muted text-center">To delete an entree, click the required row first</p>
-            </div>
-        </div>
-    </div>
+        <div class="container">
+                <div class="text-center mt-5">
+                    <h1>This is my SSP - CA3 website!</h1>
+                    <br>
+                    <p class="lead">Below, you can update a student list:</p>
+                    
+                </div><br>
+    
+                <div id="wrapper">
+                  <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                  <tr>
+                  <th>Student Name</th>
+                  <th>Student ID</th>
+                  <th>Student Email</th>
+                  </tr>
+                  
+                  <tr id="row1">
+                  <td id="name_row1">Jefferson Pereira de Matos</td>
+                  <td id="id_row1">2019385</td>
+                  <td id="email_row1">2019385@student.cct.ie</td>
+                  <td id="buttons">
+                  <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                  <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                  <input type="button" id="edit_button1 value="Delete" class="delete" onclick="delete_row('1')">
+                  </td>
+                  </tr>
+                  
+                  <tr>
+                  <td><input type="text" id="new_name"></td>
+                  <td><input type="text" id="new_id"></td>
+                  <td><input type="text" id="new_email"></td>
+                  <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+                  </tr>
+                  
+                  </table>
+                  </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+
 </body>
 </html>
