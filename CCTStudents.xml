@@ -3,6 +3,19 @@
   <student>
     <name>Jefferson Pereira de Matos</name>
     <id>2019385</id>
-    <email></email>
+    <age>33</age>
   </student>
+
+  <student>
+    <name>Emma Watson</name>
+    <id>2020185</id>
+    <age>25</age>
+  </student>
+
+  <student>
+    <name>Justin Case</name>
+    <id>2020001</id>
+    <age>27</age>
+  </student>
+
 </cct>

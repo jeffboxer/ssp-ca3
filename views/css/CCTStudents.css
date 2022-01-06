@@ -1,8 +1,16 @@
-table, th, td {
-    border: 1px solid black;
-    
-  }
+table { width: 85%; }
+table, th, td { border: solid 1px #DDD;
+    border-collapse: collapse; padding: 2px 3px; text-align: center;
+}
 
-  #buttons{
-      width:30%;
-  }
+style{
+    text-align: left;
+}
+
+#link{
+    margin-left: 1500%;
+}
+
+
+
+

@@ -1,76 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>SSP - CA3</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/CCTStudents.css" rel="stylesheet" />        
-        <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-        <script src="js/table.js"></script>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <h2 class="navbar-brand">CA3 - Jefferson Pereira de Matos - 2019385</h2>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/jeffboxer/ssp-ca3">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="Jefferson" content="" />
+    <title>SSP - CA3</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/CCTStudents.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style src="css/style.css"></style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/cct.js"></script>
+</head>
+
+<body>
+    <!--Bootstrap-->
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-                <div class="text-center mt-5">
-                    <h1>This is my SSP - CA3 website!</h1>
-                    <br>
-                    <p class="lead">Below, you can update a student list:</p>
-                    
-                </div><br>
-    
-                <div id="wrapper">
-                  <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
-                  <tr>
-                  <th>Student Name</th>
-                  <th>Student ID</th>
-                  <th>Student Email</th>
-                  </tr>
-                  
-                  <tr id="row1">
-                  <td id="name_row1">Jefferson Pereira de Matos</td>
-                  <td id="id_row1">2019385</td>
-                  <td id="email_row1">2019385@student.cct.ie</td>
-                  <td id="buttons">
-                  <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-                  <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
-                  <input type="button" id="edit_button1 value="Delete" class="delete" onclick="delete_row('1')">
-                  </td>
-                  </tr>
-                  
-                  <tr>
-                  <td><input type="text" id="new_name"></td>
-                  <td><input type="text" id="new_id"></td>
-                  <td><input type="text" id="new_email"></td>
-                  <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
-                  </tr>
-                  
-                  </table>
-                  </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js bootstrap.bundle.min.js"></script>
+            <h2 class="navbar-brand" id="h2">CA3 - Jefferson Pereira de Matos - 2019385</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" id="link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" id="link" target="_blank"
+                            href="https://github.com/jeffboxer/ssp-ca3">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page content-->
+
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1>This is my SSP - CA3 website!</h1>
+            <p class="lead">Below, you can update a student list:</p>
+
+        </div>
+
+        <!-- Page content-->
+        <div id="wrapper">
+            <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Student Age</th>
+                </tr>
+
+                <tr id="row1">
+                    <td id="name_row1">Jefferson Matos</td>
+                    <td id="id_row1">2019385</td>
+                    <td id="age_row1">33</td>
+                    <td>
+                        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+
+                <tr id="row2">
+                    <td id="name_row2">Emma Watson</td>
+                    <td id="id_row2">2020185</td>
+                    <td id="age_row2">25</td>
+                    <td>
+                        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                    </td>
+                </tr>
+
+                <tr id="row3">
+                    <td id="name_row3">Justin Case</td>
+                    <td id="id_row3">2020001</td>
+                    <td id="age_row3">27</td>
+                    <td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" id="new_name"></td>
+                    <td><input type="text" id="new_id"></td>
+                    <td><input type="text" id="new_age"></td>
+                    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+                </tr>
+
+            </table>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

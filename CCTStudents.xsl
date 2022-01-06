@@ -6,7 +6,7 @@
             <tr>
                 <th>Student Name</th>
                 <th>Student ID</th>
-                <th>Student Email</th>
+                <th>Student Age</th>
             </tr>
         </thead>
         <tbody>
@@ -24,7 +24,7 @@
                     </td>
 
                     <td>
-                        <xsl:value-of select="email" />
+                        <xsl:value-of select="age" />
 
                     </td>
 
