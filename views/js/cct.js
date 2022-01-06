@@ -1,3 +1,4 @@
+//Function created by Mikhail during our classes
 function draw_table()
 {
 	$("#results").empty();
@@ -18,6 +19,7 @@ function draw_table()
 	$.getJSONuncached("/get/html")
 };
 
+//Function created by Mikhail during our classes // Selection of table`s row.
 function select_row()
 {
 	$("#menuTable tbody tr[id]").click(function ()
@@ -30,6 +32,7 @@ function select_row()
 	})
 };
 
+//Function created by Mikhail during our classes // Deleting  table`s row.
 function delete_row(sec, ent)
 {
 	$("#delete").click(function ()
@@ -54,6 +57,9 @@ $(document).ready(function ()
 	draw_table();
 });
 
+
+// Small JS function created by me to refresh the page everytime 
+//the buttons submit or delete are clicked. This was created in order to solve a bug that was multiplicating items
 function refresh(){
     location.reload();
 }

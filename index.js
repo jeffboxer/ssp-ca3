@@ -1,4 +1,4 @@
-// This whole code was 
+// This whole code was created by Mikhail during our classes
 
 const   http = require('http'), //This module provides the HTTP server functionalities
         path = require('path'), //The path module provides utilities for working with file and directory paths
