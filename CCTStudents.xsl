@@ -1,37 +1,33 @@
 <?xml version="1.0"?> 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:template match="/">
-    <table id="students" border="1" class="indent">
+    <table id="menuTable" border="1" class="indent">
         <thead>
             <tr>
-                <th>Student Name</th>
-                <th>Student ID</th>
-                <th>Student Age</th>
+                <th>Select</th>
+                <th>Item</th>
+                <th>Price</th>
             </tr>
         </thead>
         <tbody>
-            <xsl:for-each select="//student">
+            <xsl:for-each select="//section">
                 <tr>
-                    <td>
-                        <xsl:value-of select="name" />
-
+                    <td colspan="3">
+                        <xsl:value-of select="@name" />
                     </td>
-
-                    <td>
-
-                        <xsl:value-of select="id" />
-
-                    </td>
-
-                    <td>
-                        <xsl:value-of select="age" />
-
-                    </td>
-
                 </tr>
- </xsl:for-each>
+                <xsl:for-each select="entry">
+                    <tr id="{position()}">
 
-            
+                        <td>
+                            <xsl:value-of select="item" />
+                        </td>
+                        <td align="right">
+                            <xsl:value-of select="price" />
+                        </td>
+                    </tr>
+                </xsl:for-each>
+            </xsl:for-each>
         </tbody>
     </table>
 </xsl:template>

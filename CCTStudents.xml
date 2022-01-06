@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<cct>
-  <student>
-    <name>Jefferson Pereira de Matos</name>
-    <id>2019385</id>
-    <age>33</age>
-  </student>
+<menu>
+  <section name="Laptops">
+    <entry>
+      <item>Coke</item>
+      <price>2.50</price>
+    </entry>
+    <entry>
+      <item>Vodka</item>
+      <price>15</price>
+    </entry>
+  </section>
+  <section name="Gaming PC">
+    <entry>
+      <item>Potato Salad</item>
+      <price>4.95</price>
+    </entry>
+    <entry>
+      <item>Chips</item>
+      <price>4.50</price>
+    </entry>
 
-  <student>
-    <name>Emma Watson</name>
-    <id>2020185</id>
-    <age>25</age>
-  </student>
-
-  <student>
-    <name>Justin Case</name>
-    <id>2020001</id>
-    <age>27</age>
-  </student>
-
-</cct>
+  </section>
+</menu>
