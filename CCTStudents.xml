@@ -2,26 +2,46 @@
 <menu>
   <section name="Laptops">
     <entry>
-      <item>Coke</item>
-      <price>2.50</price>
+      <item>ASUS Vivobook Pro 16X N7600PC 16-inch</item>
+      <price>1199.00</price>
     </entry>
     <entry>
-      <item/>
-      <price/>
+      <item>ASUS ROG Zephyrus G15 GA503QS 15.6"</item>
+      <price>1899.00</price>
     </entry>
     <entry>
-      <item/>
-      <price/>
+      <item>ASUS Laptop with 3 Year Warranty</item>
+      <price>149.00</price>
+    </entry>
+    <entry>
+      <item>iOTA Flo 11.6-Inch Laptop Windows 10 Home</item>
+      <price>169.00</price>
+    </entry>
+    <entry>
+      <item>ASUS ROG Zephyrus G15 GA503QS 15.6"</item>
+      <price>1899.00</price>
     </entry>
   </section>
   <section name="Gaming PC">
     <entry>
-      <item>Potato Salad</item>
-      <price>4.95</price>
+      <item>ADMI Gaming PC: i5 9400F 4.1Ghz</item>
+      <price>949.00</price>
     </entry>
     <entry>
-      <item>Chips</item>
-      <price>4.50</price>
+      <item>ASUS ROG Zephyrus G15 GA503QS 15.6"</item>
+      <price>1899.00</price>
+    </entry>
+    <entry>
+      <item>AWD-IT Gaming PC Package: AMD Ryzen 5</item>
+      <price>649.00</price>
+    </entry>
+    <entry>
+      <item>ASUS ROG Strix G15DK Gaming PC Tower</item>
+      <price>749.00</price>
+    </entry>
+    <entry>
+      <item>PALICOMP AMD Gaming PC</item>
+      <price>439.00</price>
     </entry>
   </section>
 </menu>
