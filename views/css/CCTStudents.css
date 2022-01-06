@@ -11,6 +11,9 @@ style{
     margin-left: 800%;
 }
 
-
+.selected {
+    background-color: #dc3545;
+    color: #FFF;
+}
 
 

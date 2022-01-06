@@ -6,8 +6,12 @@
       <price>2.50</price>
     </entry>
     <entry>
-      <item>Vodka</item>
-      <price>15</price>
+      <item/>
+      <price/>
+    </entry>
+    <entry>
+      <item/>
+      <price/>
     </entry>
   </section>
   <section name="Gaming PC">
@@ -19,6 +23,5 @@
       <item>Chips</item>
       <price>4.50</price>
     </entry>
-
   </section>
 </menu>
